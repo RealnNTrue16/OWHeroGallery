@@ -7,7 +7,7 @@ let chars = [
 
   {
     pic: "https://www.giantbomb.com/a/uploads/scale_small/8/87790/3025942-ovw4.png",
-    name: "DoomFist",
+    name: "Doomfist",
     cat: "Tank",
   },
 
@@ -172,8 +172,3 @@ suppChars.forEach((cardData) => {
   let cardElement = getCardElement(cardData);
   suppCardsListElement.append(cardElement);
 });
-
-//chars.forEach((cardData) => {
-//let cardElement = getCardElement(cardData);
-//cardslist.append(cardElement);
-//});
