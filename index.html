@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./pages/index.css" rel="stylesheet" />
+    <title>OW2</title>
+  </head>
+  <body class="page">
+    <div class="page__content">
+      <header class="header">
+        <!--  <img src="./images/overwatch logo.png" alt="" class="header__image" /> -->
+        <h1 class="header__title">Overwatch Hero Gallery</h1>
+      </header>
+
+      <main class="content">
+        <div class="content__header">
+          <h2 class="content_header-text">Heroes</h2>
+        </div>
+        <section class="cards">
+          <!--Start Cards-->
+          <div class="cards__container">
+            <h2 class="card__heading">Tank</h2>
+            <!--Append Tank Chars Here-->
+            <ul class="cards__list" id="cards__tank"></ul>
+          </div>
+
+          <div class="cards__container">
+            <h2 class="card__heading">Damage</h2>
+            <!--Append DPS Chars Here-->
+            <ul class="cards__list" id="cards__dps"></ul>
+          </div>
+
+          <div class="cards__container">
+            <h2 class="card__heading">Support</h2>
+            <!--Append Supp Chars Here-->
+            <ul class="cards__list" id="cards__supp"></ul>
+          </div>
+        </section>
+
+        <template id="card-template">
+          <div>
+            <li class="card">
+              <img src="" class="card__image" alt="" />
+              <div class="card__text">
+                <h2 class="card__title"></h2>
+                <button class="card__like-button" type="button"></button>
+              </div>
+            </li>
+          </div>
+        </template>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
