@@ -152,12 +152,12 @@ function getCardElement(cardData) {
   return cardElement;
 }
 
-//Filter array baed on chars category
+//Filter array based on chars category
 let tankChars = chars.filter((char) => char.cat === "Tank");
 let damageChars = chars.filter((char) => char.cat === "Damage");
 let suppChars = chars.filter((char) => char.cat === "Support");
 
-//Append Tank Chars
+//Append Tank Chars to Page
 tankChars.forEach((cardData) => {
   let cardElement = getCardElement(cardData);
   tankCardsListElement.append(cardElement);
@@ -172,3 +172,22 @@ suppChars.forEach((cardData) => {
   let cardElement = getCardElement(cardData);
   suppCardsListElement.append(cardElement);
 });
+
+//Open Modal Menu Function
+function openModal(modal) {
+  console.log("Hi");
+  modal.classList.add("modal_open");
+}
+
+//Add Feature to display large cards when clicked
+let cardClick = document.querySelectorAll(".card");
+//console.log(cardClick);
+
+let previewImageModal = document.querySelector("#preview__modal");
+let previewImageModalCloseButton =
+  previewImageModal.querySelector(".modal__close");
+
+//EVENT LISTENER
+previewImageModal.addEventListener("click", openModal);
+
+//Add Like Button Feature
