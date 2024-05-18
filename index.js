@@ -191,4 +191,3 @@ let previewImageModalCloseButton =
 previewImageModal.addEventListener("click", openModal);
 
 //Add Like Button Feature
-//Here
